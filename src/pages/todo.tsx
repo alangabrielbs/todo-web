@@ -1,3 +1,9 @@
+import { Todo } from "@/components/todo";
+
 export const TodoPage = () => {
-  return <h1>Todo</h1>;
+  return (
+    <main className="flex items-center justify-center h-svh">
+      <Todo />
+    </main>
+  );
 };
