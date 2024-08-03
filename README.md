@@ -1,30 +1,67 @@
-# React + TypeScript + Vite
+# Web Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto web criado com TypeScript, React e Vite. O projeto utiliza uma variedade de pacotes para gerenciamento de estado, formulários, roteamento e estilo. Abaixo estão as instruções para configurar e executar o projeto.
 
-Currently, two official plugins are available:
+## Estrutura do Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Scripts**:
+  - `dev`: Inicia o servidor de desenvolvimento com Vite.
+  - `build`: Compila o projeto com TypeScript e cria o bundle de produção com Vite.
+  - `lint`: Executa o linter ESLint para verificar o código.
+  - `preview`: Pré-visualiza o build de produção gerado pelo Vite.
+  - `test`: Executa os testes com Vitest.
 
-## Expanding the ESLint configuration
+## Dependências
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Principais
 
-- Configure the top-level `parserOptions` property like this:
+- **React & React DOM**: Biblioteca para construir interfaces de usuário.
+- **React Hook Form**: Biblioteca para gerenciamento de formulários.
+- **Zod**: Validação de esquemas.
+- **Axios**: Cliente HTTP para fazer requisições.
+- **Radix UI**: Componentes acessíveis e não estilizados.
+- **Tailwind CSS**: Framework de utilitários para CSS.
+- **Lucide React**: Conjunto de ícones React.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Configuração do Projeto
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. **Clone o repositório:**
+2. **Instale as dependências:**
+
+   ```bash
+   yarn install
+   ```
+
+3. **Inicie o servidor de desenvolvimento:**
+
+   ```bash
+   yarn dev
+   ```
+
+4. **Compile o projeto para produção:**
+
+   ```bash
+   yarn build
+   ```
+
+5. **Pré-visualize o build de produção:**
+
+   ```bash
+   yarn preview
+   ```
+
+6. **Execute os testes:**
+
+   ```bash
+   yarn test
+   ```
+
+7. **Verifique o código com ESLint:**
+
+   ```bash
+   yarn lint
+   ```
+
+---
+
+Se precisar de mais ajustes, é só me avisar!
